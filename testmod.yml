@@ -1,0 +1,11 @@
+- name: Update Firmware
+  hosts: localhost
+  tasks:
+  - name: Update Basler Blaze Firmware
+    blaze_firmware:
+      fwfile: '/home/james/Downloads/blaze-firmware-4.6.2/blaze-image-fw-4.6.2-20221024150208.swu'
+      ip: 10.30.0.177
+    register: testout
+  - name: Dump output
+    debug:
+      msg: '{{ testout }}'

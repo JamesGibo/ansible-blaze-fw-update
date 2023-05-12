@@ -1,0 +1,5 @@
+ansible-core==2.14.5
+termcolor
+websockets
+requests
+swupdateclient @ git+https://github.com/sbabic/swupdate.git#subdirectory=tools/python/swupdateclient
